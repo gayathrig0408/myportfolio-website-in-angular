@@ -1,0 +1,72 @@
+<div class="container text-center">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF resume</button>
+<div class="pb-2">
+
+  <accordion [isAnimated]="true" class="shadow">
+    <accordion-group [(isOpen)]="isEducationOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Education</div>
+        <div style="width: 10.95px;">
+
+        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div style=" text-align: left;">
+        <h2 class="mb-0">Master of Computer Application</h2>
+        <h3 class="text-primary">B. S. Abdur Rahman Crescent Institute Of Science And Technology</h3>
+        <ul>
+          <li>Graduated from B.S. Abdur Rahman University in May 2016</li>
+          <li>Graduated with a 8.1 GPA</li>
+        </ul>
+      </div>
+    </accordion-group>
+    <accordion-group [(isOpen)]="isSkillsOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Skills</div>
+        <div style="width: 10.95px;">
+
+        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div class="row" style=" text-align: left;">
+        <div class="col">
+          <h3>Programming Languages:</h3>
+          <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+            <li>Phyton</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Frameworks:</h3>
+          <ul>
+            <li>React</li>
+            <li>Nodsjs</li>
+            <li>Angular</li>
+          </ul>
+        </div>
+      </div>
+    </accordion-group>
+    <accordion-group [(isOpen)]="isCertificationOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Certification</div>
+        <div style="width: 10.95px;">
+
+        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+        <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div style="text-align: left;"></div>
+      <h3>Front-End Development (Besant Technologies, Bengaluru).</h3>
+      <h3>Angular (Besant Technologies, Bengaluru).</h3>
+      <h3>Phyton (Besant Technologies, Bengaluru).</h3>
+    </accordion-group>
+  </accordion>
+</div>
+</div>

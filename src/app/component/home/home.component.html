@@ -1,0 +1,35 @@
+<div class=".container" > 
+  <div class="row ">
+    <!--About me-->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img src="assets/images/profile-pic.jpg" alt="profile picture" width="150" height="150" class="rounded-circle">
+        <p>"I am a highly motivated and enthusiastic person with a strong foundation in front-end technologies like HTML, CSS, JavaScript, React and Angular."</p>
+        <p>"I am passionate about building modern, responsive web applications and continuously learning new technologies."</p>
+        <p>"I’m excited to apply my knowledge in real-world projects and grow as a full-stack developer."</p>
+        <p>"Eager to kickstart my career in software development, I’m focused on writing clean, maintainable, and scalable code."</p>
+
+        </div>
+       </div>
+  
+
+  <!--Featured Project-->
+  <div class="col-lg shadow border m-1">
+  <div class="text-center">
+  <h2>Featured Project</h2>
+  <h4>{{featuredProject.name}}</h4>
+  </div>
+
+  <carousel>
+    <div *ngFor="let picture of featuredProject.pictures">
+    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+    </div>
+  </carousel>
+
+  <p class=" mt-2 " >{{featuredProject.summary}}</p>
+  <p>Visit the skill section to learn more!</p>
+  </div>
+  </div>
+</div>
+
