@@ -1,0 +1,17 @@
+.project-card {
+  width: 350px;
+  min-height: 300px; /* Set based on your tallest card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-body {
+  flex: 1;
+}
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines */
+  -webkit-box-orient: vertical;
+}
